@@ -19,7 +19,7 @@
 }
 body{
   padding: 30px 100px;
-  font-family: 'CustomFont';
+  font-family: 'CustomFont' ,Arial, Helvetica, sans-serif;
 }
 header{
   display: flex;
