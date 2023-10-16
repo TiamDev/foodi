@@ -128,10 +128,13 @@ main>section:first-child>p{
   line-height: 1.8;
 }
 main>section:first-child>div>button:first-of-type{
-  box-shadow: 0 10px 30px 0px #39db495b;
+  box-shadow: 0 5px 5px 0px #39db4998;
   font-size: 1.1em;
   width: 200px;
   font-size: 20px;
+}
+main>section:first-child>div>button:active{
+  box-shadow: 0px 0px 0px 0px #39db495b;
 }
 main>section:first-child>div{
   display: flex;
@@ -218,6 +221,9 @@ main>.container{
   padding:13px;
   width: 250px;
   box-shadow: 2px 5px 20px 0px rgba(114, 114, 114, 0.347);
+}
+.card:hover{
+  transform: scale(1.1);
 }
 .card:last-child{
   right: 50px;
@@ -335,9 +341,11 @@ h3{
   font-size: 20px;
   margin-left: 30px;
 }
-.line>div>button:last-child{
+.line>div>button:hover{
   color:white;
   background-color:var(--maincolor);
+  transform: scale(0.9);
+  transition: transform 0.3s;
 }
 .line>h1{
   width: 40%;
@@ -347,7 +355,7 @@ h3{
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 70em;
+  width: 75em;
 }
 .inner{
   display: flex;
@@ -365,8 +373,8 @@ h3{
   background-color: white;
   position: relative;
   width: 350px;
-  height: 390px;
-  margin: 10px;
+  height: 380px;
+  margin: 10px 23px;
   padding: 40px;
   overflow: hidden;
   display: flex;
@@ -380,8 +388,14 @@ h3{
   width: 225px;
   margin-bottom: 8px;
   align-self: center;
+  transition: transform 1s;
+
 }
-.container-two>.innrer>.box>div:first-child{
+.container-two>.inner>.box:hover>img{
+
+  transform: rotate(20deg);
+}
+.container-two>.inner>.box>div:first-child{
  background-color: var(--maincolor);
  width: 90px;
  height: 90px;
@@ -390,6 +404,9 @@ h3{
  top: -34px;
  border-radius: 30px;
 }
+.container-two>.inner>.box>div:first-child i:hover{
+   transform: scale(1.1);
+ }
 .fav-heart{
   position: absolute;
   left: 23px;
@@ -563,6 +580,11 @@ bottom: 0;
 .container-four>.box-one>button{
   font-size:18px;
   padding: 15px 40px;
+  box-shadow: 0 5px 5px 0px #39db4998;
+}
+.container-four>.box-one>button:active{
+  box-shadow: 0 0px 0px 0px #39db4998;
+
 }
 .container-four>.box-two{
   width: 50%;
@@ -594,6 +616,7 @@ color:var(--maincolor);
 font-size: 18px;
 margin-top: 20px;
 margin-bottom: 15px;
+text-wrap: nowrap;
 }
 .service-card>.parag{
   color:#759e7a;
